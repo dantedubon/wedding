@@ -1,25 +1,39 @@
 <template>
-
+<div>
+   <let-it-snow v-bind="snowConf" :show="show"/>
   
-  <Wedding/>
+ 
+    <Wedding />
+</div>
+ 
 </template>
 
 <script>
-
-import Wedding from "./components/Wedding"
+import Wedding from "./components/Wedding";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Wedding
+    Wedding,
+  },
+  data () {
+    return {
+      snowConf: {
+            windPower : 5,  
+            speed : 2,
+            count : 50,
+            size : 2,
+            opacity : 0,
+         
+        },
+        show: false      
+    }
+  },
+  mounted() {
+    this.show = true
   }
-}
+  
+};
 </script>
 
-<style >
-
-
-
-
-    
-</style>
+<style></style>
