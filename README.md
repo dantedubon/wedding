@@ -1,4 +1,4 @@
-# our-wedding
+# wedding
 
 ## Project setup
 ```
