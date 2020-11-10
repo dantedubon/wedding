@@ -16,6 +16,16 @@ export default {
   components: {
     Wedding,
   },
+  metaInfo: {
+    title: " Dante & Nadia",
+    link: [
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Charmonman&family=Lovers+Quarrel&display=swap'
+      }
+    ]
+
+  },
   data () {
     return {
       snowConf: {
