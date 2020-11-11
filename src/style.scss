@@ -50,7 +50,7 @@ body {
   .bg-top-right{
     background-image: url("./assets/corner-top-rigth.svg");
     background-position: top;
-    background-position-x: right;
+    background-position-x: initial;
     background-repeat: no-repeat;
     background-size: auto;
     
@@ -185,4 +185,37 @@ body {
       background-color: #061e3a;
     }
 
+}
+
+.block-inv{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  img{
+    width: 700px;
+    display: block;
+    margin: auto;
+    @media screen and(max-width:575.98px){
+      width: 300px;
+    }
+    @media screen and(min-width:576px){
+      width: 483px;
+    }
+    @media screen and(min-width:768px){
+      width: 700px;
+    }
+  }
+}
+.logo-footer{
+  display: block;
+  margin: auto;
+  width: 200px;
+}
+.menu-mobile{
+  background-image:url("./assets/menu.svg") ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
