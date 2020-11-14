@@ -47,7 +47,7 @@
         <div class="text-container text-dark ">
           <p>El enlace a la transmisión via zoom será habilitado a las 11:00 am del 14 de Noviembre del 2020</p>
         </div>
-        <button class="button-ceremonia mb-5" type="button">Enlace de la Ceremonia</button>
+        <button class="button-ceremonia mb-5" type="button" @click="redirectToZoom()" >Enlace de la Ceremonia</button>
       </div>
     </div>
     <footer class="bg-bottom-right">
@@ -65,7 +65,11 @@
 <script>
 export default {
   name: 'Wedding',
-
+  methods: {
+    redirectToZoom: function(){
+      window.open("https://us02web.zoom.us/j/84382800826", "_blank")
+    }
+}
   
 }
 </script>
